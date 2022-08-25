@@ -39,6 +39,11 @@
             color: inherit;
             text-decoration: none;
         }
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
         .container {
             margin: 0 auto;
             max-width: 640px;
@@ -119,15 +124,28 @@
             height: 100%;
             width: 100%;
         }
+        /*.banner {*/
+        /*    width: 100%;*/
+        /*    margin: 0 auto;*/
+        /*}*/
         .banner {
+             position: relative;
+             height: 50vh;
             width: 100%;
             margin: 0 auto;
         }
+
+        /*.banner img {*/
+        /*    width: 100%;*/
+        /*    height: 100%;*/
+        /*}*/
         .banner img {
             width: 100%;
-            height: 100%;
+            /* height: 100%; */
+            position: absolute;
+            z-index: -1;
+            height: auto;
         }
-
         .offer {
             display: inline-flex;
             /* display: flex; */
@@ -922,10 +940,14 @@
 
 
 .info {
-    transform: translateY(50px);
+    /*transform: translateY(50px);*/
 }
 
-
+        /*.footer {*/
+        /*     margin-top: 0;*/
+        /*     margin-bottom: 0;*/
+        /*    transform: translateY(-70%);*/
+        /*}*/
 
 
 
